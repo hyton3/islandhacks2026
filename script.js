@@ -52,7 +52,6 @@ function getVal(){
 
 
 
-
 let score=0;
 
 function sort(itemVal, binType, score){
@@ -62,6 +61,10 @@ function sort(itemVal, binType, score){
     else {
         score -= 1
     }
+
+    let newItemNum = randomNumber()
+    randomItem(newItemNum)
+    getVal(newItemNum)
 }
 
 

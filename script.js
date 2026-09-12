@@ -11,13 +11,14 @@ let itemList=[];
 let ifCorrect;
 let itemListAmount;
 
+
 function randomNumber(){
     let number = Math.floor(Math.random() * itemListAmount) + 1;
     console.log(number);
 }
-
-
-
+function randomItem(){
+    
+}
 function interface() {
     function sort(){
 

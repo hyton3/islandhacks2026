@@ -1,5 +1,4 @@
-
-
+let numbersAlready = [];
 
 function itemGeneration(){
     let itemList=[["Item 1",[1]], ["Item 2",[1]], ["Item 3",[1]], 
@@ -13,24 +12,37 @@ function itemGeneration(){
 
     function generateItem(){
         function randomNumber(){
+
+            let alreadyUsed = numbersAlready.length;
+            if (alreadyUsed == itemListAmount){
+                numbersAlready = [];
+            }
+
             itemNumber = Math.floor(Math.random() * itemListAmount) + 0;
+            let hasNumber = numbersAlready.includes(itemNumber);
+            while (hasNumber == true){
+                itemNumber = Math.floor(Math.random() * itemListAmount) + 0;
+                hasNumber = numbersAlready.includes(itemNumber);
+            }
+            numbersAlready.push(itemNumber);
             return itemNumber;
         }
-    function randomItem(){
-        item = itemList[itemNumber];
-        return item;
-    }
-    function getVal(){
-        itemVal = itemList[itemNumber][1];
-        return itemVal;
-    }
+        
+        function randomItem(){
+            item = itemList[itemNumber];
+            return item;
+        }
+        
+        function getVal(){
+            itemVal = itemList[itemNumber][1];
+            return itemVal;
+        }
     randomNumber();
     randomItem();
     getVal();
-}
+    }
     generateItem();
 }
-itemGeneration();
 
 
 //if it doesnt work, take this var and put in every function

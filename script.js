@@ -8,7 +8,7 @@ let recycleBin;
 let compostBin;
 let buttonClicked;
 let itemList=[];
-let
+
 class UniqueCycleGenerator {
     constructor(low, high) {
         this.low = low;

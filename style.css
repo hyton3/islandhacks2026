@@ -6,7 +6,15 @@
     box-sizing: border-box;
 }
 
+html, #pageContainer {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 body {
+    height: 100%;
+    padding: 0;
     margin: 0;
     background-color: rgb(240, 240, 240);
     font-family:Arial, Helvetica, sans-serif;
@@ -26,27 +34,39 @@ a:hover {
     user-select: none; /* Standard syntax */
 }
 
-.siteHeader {
+#pageContainer {
+    position: relative;
+}
+
+#siteHeader #midScreen #binContainer {
+    position: absolute;
+}
+
+#siteHeader {
     background-color: cornsilk;
-    min-height: 50px;
+    height: 50px;
     width:auto;
 }
 
-.pageContainer {
-    background-color: darkkhaki;
-    height: 400px;
-    width: auto;
+#midScreen {
+    background-color: rgb(0, 255, 98);
+    top: 50px;
+    bottom: 150px;
+    width: 100%;
 }
 
-.midScreen {
-    background-color: wheat;
-    height: 300px;
-    width: auto;
-    margin-bottom: 20px;
-}
-
-.binContainer {
+#binContainer {
+    display: flex;
+    bottom: 0;
     background-color: lightslategrey;
-    height: 80px;
-    width:auto;
+    height: 150px;
+    width:100%;
+    justify-content: space-around;
 }
+
+.trashBin {
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+

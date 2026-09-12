@@ -22,6 +22,7 @@ body {
     font-style: normal;
     font-variation-settings: 
         "wdth" 100;
+    overflow: hidden;
 }
 
 a:hover {
@@ -43,23 +44,28 @@ a:hover {
 }
 
 #siteHeader {
-    background-color: cornsilk;
-    height: 50px;
-    width:auto;
+    background-color: rgb(184, 239, 230);
+    height: 75px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("images/trash-SHADED.png");
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 #midScreen {
-    background-color: rgb(0, 255, 98);
-    top: 50px;
-    bottom: 150px;
+    /* background-color: rgb(0, 255, 98); */
+    top: 75px;
+    bottom: 200px;
     width: 100%;
 }
 
 #binContainer {
     display: flex;
     bottom: 0;
-    background-color: lightslategrey;
-    height: 150px;
+    /* background-color: lightslategrey; */
+    height: 200px;
     width:100%;
     justify-content: space-around;
 }
@@ -67,6 +73,38 @@ a:hover {
 .trashBin {
     width: 30%;
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
+    image-rendering: crisp-edges;
+    transition: .5s;
+    margin-top: 50px;
 }
 
+.trashBin:hover {
+    margin-top: 0px;
+}
+
+#instruction {
+    /* background-color: blueviolet; */
+    color: whitesmoke;
+    width: 33%;
+    font-size: 30px;
+    padding-left: 5px;
+    font-family: Helvetica;
+} 
+#score {
+    /* background-color: rgb(206, 135, 135); */
+    color: whitesmoke;
+    width: 33%;
+    text-align: center;
+    font-size: 60px;
+    font-family: Helvetica;
+} 
+#word {
+    /* background-color: rgb(23, 168, 40); */
+    color: whitesmoke;
+    width: 33%;
+    text-align: end;
+    font-size: 30px;
+    padding-right: 5px;
+    font-family: Helvetica;
+} 

@@ -8,19 +8,26 @@ let recycleBin;
 let compostBin;
 let buttonClicked;
 let itemList=[];
-let 
+let ifCorrect;
 
-function interface() {
+
+function newItem(){
+    //randomnumber
+    //put item from list onto the website
+
+}
+function interfaceGuess() {
     function sort(){
 
     }
+    /*
     function guessItem(){
-        if (buttonClicked == )
+        if (buttonClicked == Imagetype){
+
+        }
     }
+        */
     function updateScore() {
 
-    }
-    function animation() {
-    
     }
 }

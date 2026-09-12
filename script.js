@@ -1,10 +1,11 @@
 let numbersAlready = [];
 
 function itemGeneration(){
-    let itemList=[[["c5.png",["compost"]], ["c15.png",["compost"]], ["l4.png",[landfill]], 
-    ["l7.png",["landfill"]], ["l9.png",["landfill]]"]], ["l2.png",["landfill"]], ["r1.png",["landfill]]"]],
+    let itemList=[
+    ["c5.png",["compost"]], ["c15.png",["compost"]], ["l4.png",["landfill"]], 
+    ["l7.png",["landfill"]], ["l9.png",["landfill"]], ["l2.png",["landfill"]], ["r1.png",["landfill"]],
     ["r3.png",["recycle"]], ["r6.png",["recycle"]], ["r6.png",["recycle"]], ["r8.png",["recycle"]], ["r10.png",["recycle"]],
-    ["r13.png"["recycle"]], ["r17.png",["recycle"]], ["r18.png",["recycle"]], ["t14.png","landfill"]],
+    ["r13.png"["recycle"]], ["r17.png",["recycle"]], ["r18.png",["recycle"]], ["t14.png",["landfill"]],
     ["t15.png",["landfill"]], ["t16.png",["landfill"]], ["t17.png",["landfill"]]
     ];
     let itemListAmount = itemList.length;

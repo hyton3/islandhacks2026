@@ -8,7 +8,7 @@ let recycleBin;
 let compostBin;
 let buttonClicked;
 let itemList=[];
-let 
+let tempVar;
 
 function interface() {
     function sort(){

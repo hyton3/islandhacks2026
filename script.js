@@ -1,9 +1,11 @@
 let numbersAlready = [];
 
 function itemGeneration(){
-    let itemList=[["Item 1",[1]], ["Item 2",[1]], ["Item 3",[1]], 
-    ["Item 4",[1]], ["Item 5",[1]], ["Item 6",[1]], ["Item 7",[1]], ["Item 8",[1]], ["Item 9",[1]], 
-    ["Item 10",[1]]
+    let itemList=[[["c5.png",["compost"]], ["c15.png",["compost"]], ["l4.png",[landfill]], 
+    ["l7.png",["landfill"]], ["l9.png",["landfill]]"]], ["l2.png",["landfill"]], ["r1.png",["landfill]]"]],
+    ["r3.png",["recycle"]], ["r6.png",["recycle"]], ["r6.png",["recycle"]], ["r8.png",["recycle"]], ["r10.png",["recycle"]],
+    ["r13.png"["recycle"]], ["r17.png",["recycle"]], ["r18.png",["recycle"]], ["t14.png","landfill"]],
+    ["t15.png",["landfill"]], ["t16.png",["landfill"]], ["t17.png",["landfill"]]
     ];
     let itemListAmount = itemList.length;
     let itemNumber = itemListAmount - 1;
@@ -49,7 +51,7 @@ function itemGeneration(){
 let binType;
 let score=0;
 function sortingTrash(itemVal, score){
-    binType = trash;
+    binType = landfill;;
     if (binType == itemVal){
         //Run the animation for correct answer
         score=score+1;

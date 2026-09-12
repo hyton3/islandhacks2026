@@ -1,36 +1,79 @@
-//Variables
-let score = 0;
-let streak = 0;
-let userGuess;
-let itemType;
-let trashBin
-let recycleBin;
-let compostBin;
-let buttonClicked;
-let itemList=[];
-let ifCorrect;
-let itemListAmount;
+let numbersAlready = [];
 
+function itemGeneration(){
+    let itemList=[["Item 1",[1]], ["Item 2",[1]], ["Item 3",[1]], 
+    ["Item 4",[1]], ["Item 5",[1]], ["Item 6",[1]], ["Item 7",[1]], ["Item 8",[1]], ["Item 9",[1]], 
+    ["Item 10",[1]]
+    ];
+    let itemListAmount = itemList.length;
+    let itemNumber = itemListAmount - 1;
+    let number;
+    let itemVal;
 
-function randomNumber(){
-    let number = Math.floor(Math.random() * itemListAmount) + 1;
-    console.log(number);
-}
-function randomItem(){
-    
-}
-function interface() {
-    function sort(){
+    function generateItem(){
+        function randomNumber(){
 
-    }
-    /*
-    function guessItem(){
-        if (buttonClicked == Imagetype){
+            let alreadyUsed = numbersAlready.length;
+            if (alreadyUsed == itemListAmount){
+                numbersAlready = [];
+            }
 
+            itemNumber = Math.floor(Math.random() * itemListAmount) + 0;
+            let hasNumber = numbersAlready.includes(itemNumber);
+            while (hasNumber == true){
+                itemNumber = Math.floor(Math.random() * itemListAmount) + 0;
+                hasNumber = numbersAlready.includes(itemNumber);
+            }
+            numbersAlready.push(itemNumber);
+            return itemNumber;
         }
+        
+        function randomItem(){
+            item = itemList[itemNumber];
+            return item;
+        }
+        
+        function getVal(){
+            itemVal = itemList[itemNumber][1];
+            return itemVal;
+        }
+    randomNumber();
+    randomItem();
+    getVal();
     }
-        */
-    function updateScore() {
+    generateItem();
+}
 
+
+//if it doesnt work, take this var and put in every function
+let binType;
+let score=0;
+function sortingTrash(itemVal, score){
+    binType = trash;
+    if (binType == itemVal){
+        //Run the animation for correct answer
+        score=score+1;
+    }else{
+        //Run the animation for incorrect anwswer
+    }
+
+}
+function sortingRecycle(itemVal, score){
+    binType = recycle;
+    if (binType == itemVal){
+        //Run the animation for correct answer
+        score=score+1;
+    } else{
+        //Run the animation for incorrect anwswer
+    }
+
+}
+function sortingCompost(itemVal, score){
+    binType = compost;
+    if (binType == itemVal){
+        //Run the animation for correct answer
+        score=score+1;
+    } else{
+        //Run the animation for incorrect anwswer
     }
 }

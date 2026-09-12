@@ -8,15 +8,9 @@ let recycleBin;
 let compostBin;
 let buttonClicked;
 let itemList=[];
-let ifCorrect;
+let 
 
-
-function newItem(){
-    //randomnumber
-    //put item from list onto the website
-
-}
-function interfaceGuess() {
+function interface() {
     function sort(){
 
     }

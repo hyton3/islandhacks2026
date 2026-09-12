@@ -1,14 +1,4 @@
-/*Variables
-let score = 0;
-let streak = 0;
-let userGuess;
-let itemType;
-let trashBin
-let recycleBin;
-let compostBin;
-let buttonClicked;
-let ifCorrect;
-*/
+
 
 
 function itemGeneration(){
@@ -64,6 +54,7 @@ function sortingRecycle(itemVal, score){
     } else{
         //Run the animation for incorrect anwswer
     }
+
 }
 function sortingCompost(itemVal, score){
     binType = compost;
@@ -73,5 +64,4 @@ function sortingCompost(itemVal, score){
     } else{
         //Run the animation for incorrect anwswer
     }
-    
 }

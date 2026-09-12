@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title></title> 
+        <title>Sorting Game</title> 
         <!-- title of website -->
-        <link rel = "icon" href = ""C:\Users\hayto\OneDrive\Documents\GitHub\islandhacks2026\images\Render_Coil.png"">
+        <link rel = "icon" href = "C:\Users\hayto\OneDrive\Documents\GitHub\islandhacks2026\images\Render_Coil.png">
         <link rel = "stylesheet" href = "style.css">
         <script src = "script.js"></script>
         <meta name = "viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-        <h1>Hello World!</h1>
-        <p>
-            lorem ipsum blahsdkljfhaskljfnhsajklfhklsdhf askldfhaskljdfh alksjdhfklasj lkjshfkl a alskjdhfasjkld flkaskljdfhaskld f ljksadh fkljasdhfjkl ashfjklas
-        </p>
+        <div id = "pageContainer">
 
+            <div id = "siteHeader" style = "position: absolute">
+                <span id = "instruction"></span>
+                <span id = "score"></span>
+                <span id = "word"></span>
+            </div>
+            <!-- header div -->
+            <div id = "midScreen"  style = "position: absolute"></div>
+            <!-- mid screen (item + desc + title) -->
+            <div id = "binContainer" style = "position: absolute">
+                <div class = "trashBin" id = "recycle"></div>
+                <div class = "trashBin" id = "compost"></div>
+                <div class = "trashBin" id = "trash"></div>
+            </div>
+            <!-- trash bins -->
 
-
+        </div>
     </body>
 </html>

@@ -112,9 +112,9 @@ a:hover {
 } 
 
 #renderedItemDiv {
-    width: 20%;
-    height: 20cqw;
-    background-color: rgb(92, 208, 208);
+    width: 30%;
+    height: 30cqw;
+    /* background-color: rgb(92, 208, 208); */
     background-image: url("images/coin-fallback.png");
     background-size: cover;
     margin-top: 100px;

@@ -1,15 +1,15 @@
 let numbersAlready = [];
 let itemList=[
-["c5.png","compost"], ["c15.png","compost"], ["l4.png","landfill"], 
-["l7.png","landfill"], ["l9.png","landfill"], ["l2.png","landfill"], ["r1.png","landfill"],
-["r3.png","recycle"], ["r6.png","recycle"], ["r6.png","recycle"], ["r8.png","recycle"], ["r10.png","recycle"],
-["r13.png","recycle"], ["r17.png","recycle"], ["r18.png","recycle"], ["t14.png","landfill"],
-["t15.png","landfill"], ["t16.png","landfill"], ["t17.png","landfill"]
+["images/c5.png","compost"], ["images/c15.png","compost"], ["images/l4.png","landfill"], 
+["images/l7.png","landfill"], ["images/l9.png","landfill"], ["images/l2.png","landfill"], ["images/r1.png","landfill"],
+["images/r3.png","recycle"], ["images/r6.png","recycle"], ["images/r8.png","recycle"], ["images/r10.png","recycle"],
+["images/r13.png","recycle"], ["images/r17.png","recycle"], ["images/r18.png","recycle"], ["images/t14.png","landfill"],
+["images/t15.png","landfill"], ["images/t16.png","landfill"], ["images/t17.png","landfill"]
 ];
 let itemListAmount = itemList.length;
 let itemNumber = itemListAmount - 1;
 let number;
-let itemVal = ["recycle"];
+let itemVal = "recycle";
 
 
 function randomNumber(){
@@ -40,19 +40,20 @@ function randomNumber(){
 }
 
 
-function randomItem(){
-    item = itemList[itemNumber][0];
+function randomItem(num){
+    item = itemList[num][0];
     return item;
 }
 
-function getVal(){
-    itemVal = itemList[itemNumber][1];
-    return itemVal;
+function getVal(num){
+    iv = itemList[num][1];
+    return iv;
 }
 
 
 
 let score=0;
+let imgElement = document.getElementById("renderedItemDiv")
 
 function sort(e){
     if (e.id == itemVal){
@@ -63,9 +64,11 @@ function sort(e){
     }
     console.log(score)
 
+
     let newItemNum = randomNumber()
-    randomItem(newItemNum)
-    getVal(newItemNum)
+    imgElement.style.backgroundImage = `url('${randomItem(newItemNum)}')`
+    itemVal = getVal(newItemNum)
+    console.log(`url('${randomItem(newItemNum)}')`)
 }
 
 

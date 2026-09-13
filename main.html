@@ -19,13 +19,13 @@
             </div>
             <!-- header div -->
             <div id = "midScreen"  style = "position: absolute">
-                <div class = "renderedItemDiv"><img id = "itemImage"/></div>
+                <div id = "renderedItemDiv"></div>
             </div>
             <!-- mid screen (item + desc + title) -->
             <div id = "binContainer" style = "position: absolute">
-                <div class = "trashBin unselectable" id = "recycle" onclick = sort()><img src = "images/pixilart-drawing.png" style = "width: 100%"/></div>
-                <div class = "trashBin unselectable" id = "compost"><img src = "images/pixil-frame-0 (1).png" style = "width: 100%"/></div>
-                <div class = "trashBin unselectable" id = "trash"><img src = "images/pixil-frame-0 (2).png" style = "width: 100%"/></div>
+                <div class = "trashBin unselectable" id = "recycle" onclick = sort(this)><img src = "images/pixilart-drawing.png" style = "width: 100%"/></div>
+                <div class = "trashBin unselectable" id = "compost" onclick = sort(this)><img src = "images/pixil-frame-0 (1).png" style = "width: 100%"/></div>
+                <div class = "trashBin unselectable" id = "landfill" onclick = sort(this)><img src = "images/pixil-frame-0 (2).png" style = "width: 100%"/></div>
             </div>
             <!-- trash bins -->
 

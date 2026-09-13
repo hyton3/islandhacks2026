@@ -54,6 +54,7 @@ function getVal(num){
 
 let score=0;
 let imgElement = document.getElementById("renderedItemDiv")
+let scoreElement = document.getElementById("scoreCount")
 
 function sort(e){
     if (e.id == itemVal){
@@ -67,6 +68,7 @@ function sort(e){
 
     let newItemNum = randomNumber()
     imgElement.style.backgroundImage = `url('${randomItem(newItemNum)}')`
+    scoreElement.innerHTML = "Score: " + String(score)
     itemVal = getVal(newItemNum)
     console.log(`url('${randomItem(newItemNum)}')`)
 }
